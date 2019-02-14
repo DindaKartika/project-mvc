@@ -10,5 +10,6 @@ def index(request):
 def foto(request):
    return render(request, 'berita/foto.html', {})
 
-def base(request):
-   return render(request, 'base/base.html', {})
+def hlm_berita(request):
+    return render(request, 'berita/konten.html', {})
+>>>>>>> develop
