@@ -9,3 +9,6 @@ def index(request):
 
 def foto(request):
    return render(request, 'berita/foto.html', {})
+
+def hlm_berita(request):
+    return render(request, 'berita/konten.html', {})
