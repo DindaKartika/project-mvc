@@ -12,4 +12,3 @@ def foto(request):
 
 def hlm_berita(request):
     return render(request, 'berita/konten.html', {})
->>>>>>> develop
