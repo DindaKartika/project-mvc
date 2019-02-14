@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display'); */
 
 .blue {
     background-color: #37ccc2 !important;
@@ -81,6 +80,8 @@ input[type=text]:focus {
     font-size: 25;
     position: relative;
     top: 15px;
+}
+
 .section{
     margin: 100px;
 }
@@ -94,5 +95,4 @@ input[type=text]:focus {
     width: 600px;
     height: auto;
     max-width: 100%;
->>>>>>> develop
 }
