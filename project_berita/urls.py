@@ -23,8 +23,8 @@ urlpatterns = [
     path('', include('berita.urls')),
     path('', include('member.urls')),
     path('', include('redaksi.urls')),
+    path('', include('contact.urls')),
 ]
 
 urlpatterns +=staticfiles_urlpatterns()
 urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
->>>>>>> develop
