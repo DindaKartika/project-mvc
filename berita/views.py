@@ -9,3 +9,6 @@ def index(request):
 
 def foto(request):
    return render(request, 'berita/foto.html', {})
+
+def base(request):
+   return render(request, 'base/base.html', {})
