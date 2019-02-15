@@ -18,20 +18,20 @@ def foto(request):
    return render(request, 'berita/foto.html', {})
 
 def hlm_berita(request,id):
-   beritas = Berita.objects.get(pk=id)
-   return render(request, 'berita/berita.html', {'beritas':berita})
+   berita = Berita.objects.get(pk=id)
+   return render(request, 'berita/berita.html', {'berita':berita})
 
 def hlm_ekonomi(request,id):
-   ekonomis = Ekonomi.objects.get(pk=id)
-   return render(request, 'berita/ekonomi.html', {'ekonomis':ekonomi})
+   ekonomi = Ekonomi.objects.get(pk=id)
+   return render(request, 'berita/ekonomi.html', {'ekonomi':ekonomi})
 
-def hlm_olahraga(reqOlahRagad):
-   olahragas = OlahRaga.objects.get(pk=id)
-   return render(request, 'berita/olahraga.html', {'olahragas':olahraga})
+def hlm_olahraga(request,id):
+   olahraga = OlahRaga.objects.get(pk=id)
+   return render(request, 'berita/olahraga.html', {'olahraga':olahraga})
 
 def hlm_otomotif(request,id):
-   otomotifs = Otomotif.objects.get(pk=id)
-   return render(request, 'berita/otomotif.html', {'otomotifs':otomotif})
+   otomotif = Otomotif.objects.get(pk=id)
+   return render(request, 'berita/otomotif.html', {'otomotif':otomotif})
 
 def form_berita(request):
    def input(request):
