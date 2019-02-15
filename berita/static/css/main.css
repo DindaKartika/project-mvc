@@ -189,7 +189,7 @@ input[type=text]:focus {
     padding: 0 200px;
 }
 
-.image img{
+.image img{ 
     width: 700px;
     max-width: 100%;
 }
@@ -208,4 +208,12 @@ input[type=text]:focus {
 
 .comment{
     text-align: right;
+}
+
+/* Styling form */
+
+.bg{
+    background-color: #daebe8;
+    margin: 10px 100px;
+    padding: 20px;
 }
