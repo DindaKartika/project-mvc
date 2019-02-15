@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display'); */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 .blue {
     background-color: #37ccc2 !important;
@@ -99,6 +99,9 @@ input[type=text]:focus {
     max-width: 100%;
 }
 
+.h400{
+    height: 400px;
+}
 .recent-news{
     border-right: 1px solid grey;
 }
