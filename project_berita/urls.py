@@ -23,7 +23,6 @@ urlpatterns = [
     path('', include('berita.urls')),
     path('', include('member.urls')),
     path('', include('redaksi.urls')),
-    path('', include('contact.urls')),
 ]
 
 urlpatterns +=staticfiles_urlpatterns()
