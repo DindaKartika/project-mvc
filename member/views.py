@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.utils import timezone
+from .models import Member
 
 # Create your views here.
 def signup(request):
