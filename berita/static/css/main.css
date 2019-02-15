@@ -235,3 +235,11 @@ input[type=text]:focus {
 .tambah{
     margin: 5px;
 }
+
+/* Styling Redaksi */
+
+.bgr{
+    background-color: #daebe8;
+    margin: 10px 100px;
+    padding: 20px;
+}
