@@ -82,11 +82,13 @@ input[type=text]:focus {
     top: 15px;
 }
 
+/* Styling Home */
+
 .section{
-    margin: 100px;
+    margin: 10px auto;
 }
 
-.headline{
+.headline-content{
     padding: 20px;
     background-color: #87bdd8;
 }
@@ -94,5 +96,57 @@ input[type=text]:focus {
 .headline-img img{
     width: 600px;
     height: auto;
+    max-width: 100%;
+}
+
+.recent-news{
+    border-right: 1px solid grey;
+}
+
+.berita-1{
+    margin: 10px 0;
+}
+
+.berita-2{
+    margin: 10px 0;
+}
+
+.br2kiri{
+    background-color: #b7d7e8;
+    margin-right: 10px;
+}
+
+.br2kiri h3{
+    text-align: center;
+    padding : 15px;
+}
+
+.br2kiri-dlm{
+    border-bottom: 1px solid blue;
+    padding : 10px;
+}
+
+.br2kiri img{
+    width: 520px;
+    max-width: 100%;
+}
+
+.br2kanan{
+    background-color: white;
+    margin-right: 10px;
+}
+
+.br2kanan h3{
+    text-align: center;
+    padding : 15px;
+}
+
+.br2kanan-dlm{
+    border-bottom: 1px solid blue;
+    padding : 10px;
+}
+
+.br2kanan img{
+    width: 520px;
     max-width: 100%;
 }
