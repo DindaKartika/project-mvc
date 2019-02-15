@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'berita',
     'member',
     'redaksi',
+    'contact',
 ]
 
 MIDDLEWARE = [
