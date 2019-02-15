@@ -12,7 +12,11 @@ def home(request):
    return render(request, 'berita/home.html', {'beritas':berita, 'ekonomis':ekonomi, 'olahragas':olahraga, 'otomotifs':otomotif})
 
 def index(request):
-   return render(request, 'berita/index.html', {})
+    berita = Berita.objects.all().order_by('-tanggal')
+    ekonomi = Ekonomi.objects.all().order_by('-tanggal')
+    olahraga = OlahRaga.objects.all().order_by('-tanggal')
+    otomotif = Otomotif.objects.all().order_by('-tanggal')
+    return render(request, 'berita/index.html', {'beritas':berita, 'ekonomis':ekonomi, 'olahragas':olahraga, 'otomotifs':otomotif})
 
 def foto(request):
    return render(request, 'berita/foto.html', {})

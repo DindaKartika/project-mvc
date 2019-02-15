@@ -217,3 +217,21 @@ input[type=text]:focus {
     margin: 10px 100px;
     padding: 20px;
 }
+
+/* Styling Index */
+
+.news-grp{
+    padding : 10px 0;
+}
+
+.news-grp h4{
+    padding: 10px 0;
+}
+
+.button-tbh{
+    text-align: right
+}
+
+.tambah{
+    margin: 5px;
+}

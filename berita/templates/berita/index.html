@@ -1,0 +1,65 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>AlphaNews - Portal berita anda</title>
+{% endblock %}
+
+{% block content %}
+    <div class="col-md-12 main-content">
+        <div class="bg">
+            <div class="news-grp">
+                <h4>Berita Terkini</h4>
+                {% for berita in beritas %}
+                <div class="recent">
+                    <span>{{berita.judul}}</span>
+                    <span style="font-style: italic; color: blue;">{{berita.tanggal}}</span>
+                    <a href="{% url 'hlm_berita' id=berita.id %}"><button>Baca Selengkapnya</button></a>
+                </div>
+                {% endfor %}
+                <div class="button-tbh">
+                    <a href="{% url 'form_berita' %}"><button class="tambah">Tambah Berita</button></a>
+                </div>
+            </div>
+            <div class="news-grp">
+                <h4>Berita Ekonomi</h4>
+                {% for ekonomi in ekonomis %}
+                <div class="recent">
+                    <span>{{ekonomi.judul}}</span>
+                    <span style="font-style: italic; color: blue;">{{ekonomi.tanggal}}</span>
+                    <a href="{% url 'hlm_ekonomi' id=ekonomi.id %}"><button>Baca Selengkapnya</button></a>
+                </div>
+                {% endfor %}
+                <div class="button-tbh">
+                    <a href="{% url 'form_ekonomi' %}"><button class="tambah">Tambah Berita</button></a>
+                </div>
+            </div>
+            <div class="news-grp">
+                <h4>Berita Otomotif</h4>
+                {% for otomotif in otomotifs %}
+                <div class="recent">
+                    <span>{{otomotif.judul}}</span>
+                    <span style="font-style: italic; color: blue;">{{otomotif.tanggal}}</span>
+                    <a href="{% url 'hlm_otomotif' id=otomotif.id %}"><button>Baca Selengkapnya</button></a>
+                </div>
+                {% endfor %}
+                <div class="button-tbh">
+                    <a href="{% url 'form_otomotif' %}"><button class="tambah">Tambah Berita</button></a>
+                </div>
+            </div>
+            <div class="news-grp">
+                <h4>Berita Olah Raga</h4>
+                {% for olahraga in olahragas %}
+                <div class="recent">
+                    <span>{{olahraga.judul}}</span>
+                    <span style="font-style: italic; color: blue;">{{olahraga.tanggal}}</span>
+                    <a href="{% url 'hlm_olahraga' id=olahraga.id %}"><button>Baca Selengkapnya</button></a>
+                </div>
+                {% endfor %}
+                <div class="button-tbh">
+                    <a href="{% url 'form_olahraga' %}"><button class="tambah">Tambah Berita</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
