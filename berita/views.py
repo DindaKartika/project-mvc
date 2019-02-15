@@ -34,7 +34,6 @@ def hlm_otomotif(request,id):
    return render(request, 'berita/otomotif.html', {'otomotif':otomotif})
 
 def form_berita(request):
-   def input(request):
     if request.method == "POST":
         form = NewsForm(request.POST, request.FILES)
         if form.is_valid():
@@ -47,7 +46,6 @@ def form_berita(request):
     return render(request, 'berita/form-berita.html', {'form':form})
 
 def form_ekonomi(request):
-   def input(request):
     if request.method == "POST":
         form = EconomyForm(request.POST, request.FILES)
         if form.is_valid():
@@ -60,7 +58,6 @@ def form_ekonomi(request):
     return render(request, 'berita/form-ekonomi.html', {'form':form})
 
 def form_otomotif(request):
-   def input(request):
     if request.method == "POST":
         form = OutomotiveForm(request.POST, request.FILES)
         if form.is_valid():
@@ -73,7 +70,6 @@ def form_otomotif(request):
     return render(request, 'berita/form-otomotif.html', {'form':form})
 
 def form_olahraga(request):
-   def input(request):
     if request.method == "POST":
         form = SportForm(request.POST, request.FILES)
         if form.is_valid():
