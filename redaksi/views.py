@@ -4,4 +4,5 @@ from .models import Redaksi
 
 # Create your views here.
 def redaksi(request):
-   return render(request, 'redaksi/redaksi.html', {})
+   redaksi = Redaksi.objects.all()
+   return render(request, 'redaksi/redaksi.html', {'redaksi':redaksi})

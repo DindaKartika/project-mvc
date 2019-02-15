@@ -16,8 +16,8 @@
     <div class="container-fluid">
         <div class="row justify-content-end backblack">
             <input type="text" name="search" placeholder="Search.." class="search h22">
-            <button type="button" class="btn btn-outline-primary margin5 bwhite"><span class="cwhite">Sign Up</span></button>
-            <button type="button" class="btn btn-outline-primary margin5 bwhite"><span class="cwhite">Log in</span></button>
+            <a class="nav-link cwhite" href="{% url 'signup' %}"><button type="button" class="btn btn-outline-primary margin5 bwhite"><span class="cwhite">Sign Up</span></button></a>
+            <a class="nav-link cwhite" href="{% url 'login' %}"><button type="button" class="btn btn-outline-primary margin5 bwhite"><span class="cwhite">Log in</span></button></a>
         </div>
     </div>
     <div class="container-fluid">
