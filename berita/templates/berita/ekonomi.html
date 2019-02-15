@@ -1,0 +1,33 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>AlphaNews - Portal berita anda</title>
+{% endblock %}
+
+{% block content %}
+        <div class="container section-page">
+            <div class="row main-content">
+                <div class="col-md-12 image">
+                    <img src="{{ekonomi.gambar.url}}">
+                    <div class="row">
+                        <div class="col-md-6 col-12 kontributor">
+                            <span>{{ekonomi.kontributor}} / {{ekonomi.tanggal}}</span>
+                        </div>
+                        <div class="col-md-6 col-sm-12 comment">
+                            <span>{{ekonomi.comment}} Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h2>{{ekonomi.judul}}</h2>
+                </div>
+                <div class="col-md-12">
+                    <p>{{ekonomi.isi}}</p>
+                </div>
+                <div class="col-md-12">
+                    <a href="{% url 'home' %}">Home</a>
+                </div>
+            </div>
+        </div>
+{% endblock %}
