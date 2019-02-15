@@ -1,5 +1,5 @@
 from django import forms
-from .models import Berita, Ekonomi, Otomotif, OlahRaga
+from .models import Berita, Ekonomi, OlahRaga, Otomotif
 
 class NewsForm(forms.ModelForm):
     class Meta:

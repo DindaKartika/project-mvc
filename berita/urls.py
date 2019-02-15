@@ -12,5 +12,5 @@ urlpatterns = [
    path('berita/input', views.form_berita, name='form_berita'),
    path('ekonomi/input', views.form_ekonomi, name='form_ekonomi'),
    path('olahraga/input', views.form_olahraga, name='form_olahraga'),
-   path('otomotif/input', views.form_otomotif, name='form_otomotif')
+   path('otomotif/input', views.form_otomotif, name='form_otomotif'),
 ]

@@ -1,6 +1,10 @@
 {% extends 'base/base.html' %}
 {% load static %}
 
+{% block title %}
+<title>AlphaNews - Portal berita anda</title>
+{% endblock %}
+
 {% block content %}
         <div class= "container section">
             <div class="headline">
@@ -15,22 +19,30 @@
                             <div class="col-md-4 col-sm-12">
                                 <h2>Ismijati Tewas Diduga Bunuh Diri Karena Tak Dinafkahi Suami</h2>
                                 <p>Ponorogo - Ismijati tewas diduga bunuh diri di rumahnya di Jalan MT Haryono, Tubuhnya bersimbah darah dengan leher menganga. Di dekatnya ada sebuah gerinda yang masih menyala.</p>
-                                <a href="{% url 'berita/7'}"><button>Baca Selengkapnya</button></a>
+                                <a href="{% url 'hlm_berita' id=1 %}"><button>Baca Selengkapnya</button></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 recent-news">
                         <h4>Berita Terkini</h4>
                         {% for berita in beritas %}
-                        <p>{{berita.judul}}</p>
-                        <a href="{% url 'hlm_berita' id=berita.id %}"><button>Baca Selengkapnya</button></a>
+                        <div class="recent">
+                            <p>{{berita.judul}}</p>
+                            <a href="{% url 'hlm_berita' id=berita.id %}"><button>Baca Selengkapnya</button></a>
+                        </div>
                         {% endfor %}
                     </div>
                 </div>
             </div>
             <div class="berita-1">
                 <div class="row">
-                    
+                    {% for ekonomi in ekonomis %}
+                    <div class="col-md-4 konten-ekonomi">
+                        <img src="{{ekonomi.gambar.url}}">
+                        <h5>{{ekonomi.judul}}</h5>
+                        <a href="{% url 'hlm_ekonomi' id=ekonomi.id %}">Baca Selengkapnya</a>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
             <div class="berita-2">

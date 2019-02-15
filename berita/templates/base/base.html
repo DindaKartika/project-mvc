@@ -7,7 +7,8 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    
+    {% block title %}
+    {% endblock %}
 </head>
 
 <body>
@@ -15,8 +16,8 @@
     <div class="container-fluid">
         <div class="row justify-content-end backblack">
             <input type="text" name="search" placeholder="Search.." class="search h22">
-            <button type="button" class="btn btn-outline-primary margin5 bwhite"><span class="cwhite">Sign Up</span></button>
-            <button type="button" class="btn btn-outline-primary margin5 bwhite"><span class="cwhite">Log in</span></button>
+            <a class="nav-link cwhite" href="{% url 'signup' %}"><button type="button" class="btn btn-outline-primary margin5 bwhite"><span class="cwhite">Sign Up</span></button></a>
+            <a class="nav-link cwhite" href="{% url 'login' %}"><button type="button" class="btn btn-outline-primary margin5 bwhite"><span class="cwhite">Log in</span></button></a>
         </div>
     </div>
     <div class="container-fluid">
@@ -31,26 +32,24 @@
             <nav class="navbar navbar-expand-sm bg-light blue ">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link cwhite" href="">Home</a>
+                        <a class="nav-link cwhite" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link cwhite" href="">Foto</a>
+                        <a class="nav-link cwhite" href="{% url 'foto' %}">Foto</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link cwhite" href="">Indeks</a>
+                        <a class="nav-link cwhite" href="{% url 'index' %}">Indeks</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link cwhite" href="">Redaksi</a>
-                    </li>
-
                 </ul>
             </nav>
         </div>
     </div>
+    <div class="background">
 
 
 {% block content %}
 {% endblock %}
+    </div>
 
 </body>
 
@@ -70,20 +69,23 @@
         <div class="col-5">
             <ul class="nav">
                 <li class="nav-item ">
-                    <a class="nav-link cwhite" href="">Redaksi</a>
+                    <a class="nav-link cwhite" href="{% url 'redaksi' %}">Redaksi</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link cwhite" href="">Contact us</a>
+                    <a class="nav-link cwhite" href="{% url 'contact' %}">Contact us</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link cwhite" href="https://drive.google.com/drive/folders/1dxdz9uvyTHstggq6-3ZTWxG-D4vYF3Oe?usp=sharing">Download File</a>
                 </li>
             </ul>
         </div>
         <div class="col-4">
             <table style="margin-left: 230px ">
                 <tr>
-                    <td><a href="www.facebook.com"><img src="{% static 'image/fb.png' %}" class="h40" alt=""></a></td>
-                    <td><a href="www.twitter.com"><img src="{% static 'image/twitter.png' %}" class="h40" alt=""></a></td>
-                    <td><a href="www.instagram.com"><img src="{% static 'image/instagram.png' %}" class="h40" alt=""></a></td>
-                    <td><a href="www.linkedin.com"><img src="{% static 'image/linkedin.png' %}" class="h40" alt=""></a></td>
+                    <td><a href="http://www.facebook.com"><img src="{% static 'image/fb.png' %}" class="h40" alt=""></a></td>
+                    <td><a href="http://www.twitter.com"><img src="{% static 'image/twitter.png' %}" class="h40" alt=""></a></td>
+                    <td><a href="http://www.instagram.com"><img src="{% static 'image/instagram.png' %}" class="h40" alt=""></a></td>
+                    <td><a href="http://www.linkedin.com"><img src="{% static 'image/linkedin.png' %}" class="h40" alt=""></a></td>
                 </tr>
             </table>
         </div>
